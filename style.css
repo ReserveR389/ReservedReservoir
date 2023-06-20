@@ -13,9 +13,9 @@
 
 /* Style the links inside the navigation bar */
 nav {
-  
+  width: 100%; 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;  /* Center the <li> elements horizontally */
   align-items: center;
   padding: 10px;
   background-color: #f1f1f1;
@@ -26,18 +26,47 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around; /* Spread out the <li> elements evenly */
   align-items: center;
+  width: 100%; /* Ensure the <ul> takes up the full width of the navigation bar */
 }
 
 nav li {
-  display: inline-block;
-  margin-left: 10px;
+  margin: 0;
 }
 
 nav a {
   text-decoration: none;
   color: black;
+  font-size: 28px; /* Initial font size */
+}
+
+
+/* Change the color when hovering */
+nav a:hover {
+  color: #B54C61; 
+  text-decoration: underline; /* Add underline effect when hovering */
+}
+
+.content{
+  width:100%;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.content h1{
+  font-size: 40px;
+  margin-top: 80px;
+}
+
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  font-size: 25px;
+  line-height: 25px;
 }
 
 nav .logo img {
