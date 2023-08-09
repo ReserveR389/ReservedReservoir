@@ -1,111 +1,64 @@
-/* banner which is the background image for */
-.banner {
-  position: fixed;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-image: url('Reserved Reservoir-logo/computer-gf7e92db6f_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* This keeps the background fixed while scrolling */
+  font-family: Arial, sans-serif;
+  margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+
+}
+
+
+body::before {
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("Reserved Reservoir-logo/computer-gf7e92db6f_1280.jpg");
-  background-size: cover;
-  background-position: center;
-  z-index: -1; /* Ensure the background appears behind other elements */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8); /* Black overlay with 80% opacity */
+  z-index: -1; /* Place the overlay behind the content */
 }
 
-/* Style the links inside the navigation bar */
-nav {
-  width: 100%; 
-  display: flex;
-  justify-content: center;  /* Center the <li> elements horizontally */
-  align-items: center;
-  padding: 10px;
-  background-color: #f1f1f1;
+/* Style for the top navigation bar */
+.top-nav {
+  background-color: #333; /* Add a semi-transparent background color to improve text readability */
+  color: #fff;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-around; /* Spread out the <li> elements evenly */
-  align-items: center;
-  width: 100%; /* Ensure the <ul> takes up the full width of the navigation bar */
+.top-nav ul {
+  list-style: none;   /* Remove the default bullet points from the list */
+  display: flex;      /* Display the list items horizontally */
+  justify-content: center; /* Center the list items horizontally */
+  padding: 10px 0;    /* Add some padding above and below the list */
 }
 
-nav li {
-  margin: 0;
+.top-nav li {
+  margin: 0 15px; /* Add spacing between each list item */
 }
 
-nav a {
+/* Increase the size of images within the navigation bar */
+.top-nav img {
+  max-width: 60px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.top-nav a {
   text-decoration: none;
-  color: black;
-  font-size: 28px; /* Initial font size */
-}
-
-
-/* Change the color when hovering */
-nav a:hover {
-  color: #B54C61; 
-  text-decoration: underline; /* Add underline effect when hovering */
-}
-
-.content{
-  width:100%;
-  position:absolute;
-  top:50%;
-  transform:translateY(-50%);
-  text-align: center;
   color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
 }
 
-.content h1{
-  font-size: 40px;
-  margin-top: 80px;
+.top-nav a:hover {
+  color: #B54C61;
 }
-
-.content p{
-  margin: 20px auto;
-  font-weight: 100;
-  font-size: 25px;
-  line-height: 25px;
-}
-
-nav .logo img {
-  width: 90%;
-  height: 45%;
-  max-width: 350px;
-  max-height: 1440px;
-}
-
-.heading{
-  text-align: center;
-  color: #fff;
-  text-transform: uppercase;
-  padding-bottom: 3.5rem;
-  font-size: 4rem;
-}
-
-.about .row{
-  display: flex;
-  align-items: center;
-  background: var(--black);
-  flex-wrap: wrap;
-}
-
-.about .row .image{
-  flex: 1 1 45rem;
-}
-
-.about .row .image img{
-  width: 100%;
-}
-
-.about .row .content{
-  flex: 1 1 45rem;
-  padding: 2rem;
-}
-
-.about .row .content h3{
-  font-size: 3rem;
-  color: #fff;
-}
-
