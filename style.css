@@ -132,3 +132,75 @@ body {
 .about-hero .description-card p {
   font-size: 16px;
 }
+
+/* Add this style to your existing style.css */
+
+.about-hero .description-card .download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #B54C61; /* Set your desired button color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about-hero .description-card .download-button:hover {
+  background-color: #000; /* Set a slightly different color on hover */
+}
+
+.about-hero .description-card .divider {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc; /* Set the color and style of the divider */
+}
+
+
+/* Styles for the Products page */
+.products-page .hero {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.products-page .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products-page .card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 280px;
+}
+
+.products-page .card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.products-page .card h2 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.products-page .card p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.products-page .card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.products-page .card-link:hover .card {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease-in-out;
+}
