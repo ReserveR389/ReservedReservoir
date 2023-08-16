@@ -207,43 +207,6 @@ body {
 
 
 /* the contact page */
-
-/* Social share menu specifically for contact.html */
-.contact-social-menu {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  align-items: flex-end;
-}
-
-.contact-social-menu .menu {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff; /* Add background color to the toggle button */
-  border-radius: 50%;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add shadow to the menu */
-}
-
-.contact-social-menu .toggle {
-  position: relative;
-  font-size: 2rem;
-  cursor: pointer;
-  color: #333; /* Icon color */
-  transition: transform 0.5s, box-shadow 0.3s;
-}
-
-.contact-social-menu.active .toggle {
-  transform: rotate(360deg);
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Larger shadow when active */
-}
-
-/* Social icons styling */
 .social-icons {
   list-style: none;
   padding: 0;
