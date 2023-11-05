@@ -15,43 +15,35 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
 /* Style for the top navigation bar */
 .top-nav {
   background-color: #333; /* Add a semi-transparent background color to improve text readability */
   color: #fff;
 }
-
 .top-nav ul {
   list-style: none;   /* Remove the default bullet points from the list */
   display: flex;      /* Display the list items horizontally */
   justify-content: center; /* Center the list items horizontally */
   padding: 10px 0;    /* Add some padding above and below the list */
 }
-
 .top-nav li {
   margin: 0 15px; /* Add spacing between each list item */
 }
-
 /* Increase the size of images within the navigation bar */
 .top-nav img {
   max-width: 60px;
   height: auto;
   vertical-align: middle;
 }
-
 .top-nav a {
   text-decoration: none;
   color: #fff;
   font-weight: bold;
   transition: color 0.3s ease-in-out;
 }
-
 .top-nav a:hover {
   color: #B54C61;
 }
-
 /* Hero section styling */
 .hero {
   display: flex;
@@ -67,8 +59,6 @@ body {
   color: white;
   text-align: center;
 }
-
-
 /* Card styling */
 .card {
   background-color: white;
@@ -97,9 +87,45 @@ body {
   color: #333;  /* Change text color to black */
 }
 
-/* for the about page */
+/* Style for the headline card */
+.headline-card {
+  flex: 0 0 calc(50% - 20px); /* Each card takes 50% of the container width with some spacing */
+  background-color: #fff;
+  padding: 20px;
+  margin-right: 20px; /* Add spacing to the right of the headline card */
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style for the video and problem/solution cards */
+.video-card{
+  flex: 0 0 20%;
+}
+.problem-card {
+  flex: 0 0 85%; /* Each card takes 100% width on smaller screens */
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+
+
+
+/* About page FOR RESERVED RESERVIOR*/
 .about-hero {
   display: flex;
+  flex-direction: column; /* Change the flex direction to column */
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -133,8 +159,6 @@ body {
   font-size: 16px;
 }
 
-/* Add this style to your existing style.css */
-
 .about-hero .description-card .download-button {
   display: inline-block;
   padding: 10px 20px;
@@ -157,19 +181,26 @@ body {
 }
 
 
-/* Styles for the Products page */
-.products-page .hero {
+
+
+
+
+
+
+/* Styles for the Products page FOR RESERVED RESERVIOR */
+.Products .hero {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.products-page .cards {
+.Products .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 }
 
-.products-page .card {
+.Products .card {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -178,58 +209,257 @@ body {
   width: 280px;
 }
 
-.products-page .card img {
+.Products .card img {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
 }
 
-.products-page .card h2 {
+.Products .card h2 {
   font-size: 24px;
   margin-top: 10px;
 }
 
-.products-page .card p {
+.Products .card p {
   font-size: 16px;
   color: #555;
   margin-top: 10px;
 }
 
-.products-page .card-link {
+.Products .card-link {
   text-decoration: none;
   color: inherit;
 }
 
-.products-page .card-link:hover .card {
+.Products .card-link:hover .card {
   transform: translateY(-5px);
   transition: transform 0.3s ease-in-out;
 }
 
 
-/* the contact page */
-.social-icons {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+
+
+
+
+
+
+/* the contact page FOR RESERVED RESERVIOR*/
+/* Box sizing rules */
+.contact-page *,
+.contact-page *::before,
+.contact-page *::after {
+    box-sizing: border-box;
+}
+/* Remove default margin and padding and reset fonts */
+.contact-page * {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+.contact-page ul[role=list],
+.contact-page ol[role=list] {
+    list-style: none;
 }
 
-.social-icons li {
-  margin-top: 5px;
+/* Set core body defaults */
+.contact-page body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
 
-.social-icons a {
-  text-decoration: none;
-  color: #333;
-  font-size: 1.5rem;
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html.contact-page:focus-within {
+        scroll-behavior: auto;
+    }
+
+    .contact-page *,
+    .contact-page *::before,
+    .contact-page *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+.contact-page body {
+    font-family: system-ui;
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    overflow: hidden;
 }
 
-/* Adjustments for smaller screens */
-@media (max-width: 576px) {
-  .contact-social-menu {
-    bottom: 10px;
-    right: 10px;
-  }
+.contact-page .orbit {
+    --size: 12rem;
+    --speed: 120s;
 }
+
+.contact-page .orbit .center-image {
+    width: var(--size);
+    position: relative;
+    z-index: 10;
+}
+
+.contact-page .orbit .center-image img {
+    position: absolute;
+    transition: opacity 500ms;
+}
+
+.contact-page .orbit .center-image img:not(:first-child):hover {
+    opacity: 0;
+}
+
+.contact-page .orbit ul {
+    display: grid;
+    place-items: center;
+    width: var(--size);
+    height: var(--size);
+    position: relative;
+    list-style: none;
+    --icon-bg: var(--green-light);
+    --text-bg: var(--green-dark);
+    transform-origin: center;
+    animation: orbit var(--speed) linear infinite;
+}
+
+.contact-page .orbit ul:hover {
+    animation-play-state: paused;
+    --orbit-play-state: paused;
+}
+
+.contact-page .orbit li {
+    position: absolute;
+    width: 8rem;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    font-weight: 500;
+    color: var(--white-light);
+    text-align: center;
+    line-height: 1;
+    display: grid;
+    place-items: center;
+}
+
+.contact-page .orbit li:hover {
+    --throb-play-state: paused;
+}
+
+.contact-page .orbit li:nth-child(1) {
+    --throb-delay: 0ms;
+}
+
+.contact-page .orbit li:nth-child(2) {
+    --throb-delay: 500ms;
+}
+
+.contact-page .orbit li:nth-child(3) {
+    --throb-delay: 1000ms;
+}
+
+.contact-page .orbit li:nth-child(4) {
+    --throb-delay: 1500ms;
+}
+
+.contact-page .orbit li:nth-child(5) {
+    --throb-delay: 2000ms;
+}
+
+.contact-page .orbit li:nth-child(6) {
+  --throb-delay: 2500ms;
+}
+
+.contact-page .orbit li:nth-child(7) {
+  --throb-delay: 3000ms;
+}
+
+.contact-page .orbit li:nth-child(8) {
+  --throb-delay: 3500ms;
+}
+.contact-page .orbit li > * {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: inherit;
+    position: absolute;
+    animation: orbit var(--speed) linear reverse infinite, throb 1s var(--throb-delay) ease-in-out infinite alternate;
+    animation-play-state: var(--orbit-play-state, running), var(--throb-play-state, running);
+}
+.contact-page .orbit li > div {
+  background-color: var(--icon-bg);
+  width: 80%; /* Adjust the width as needed */
+  height: 80%; /* Adjust the height as needed */
+}
+.contact-page .orbit li > p {
+  background: var(--text-bg);
+  transition: opacity 500ms;
+  opacity: 0;
+  width: 10%; /* Adjust the width as needed */
+  height: 10%; /* Adjust the height as needed */
+  /* Add margin or padding properties if necessary */
+}
+
+.contact-page .orbit li:hover > p {
+    opacity: 1;
+}
+
+.contact-page .orbit li:nth-child(1) {
+
+    transform: translate(15rem, 0rem);
+}
+
+.contact-page .orbit li:nth-child(2) {
+   
+    transform: translate(10rem, 10rem);
+}
+
+.contact-page .orbit li:nth-child(3) {
+   
+    transform: translate(0, 15rem);
+}
+
+.contact-page .orbit li:nth-child(4) {
+   
+    transform: translate(-10rem, 10rem);
+}
+
+.contact-page .orbit li:nth-child(5) {
+   
+    transform: translate(-15rem, 0rem);
+}
+
+.contact-page .orbit li:nth-child(6) {
+   
+    transform: translate(-10rem, -10rem);
+}
+
+.contact-page .orbit li:nth-child(7) {
+   
+    transform: translate(0, -15rem);
+}
+
+.contact-page .orbit li:nth-child(8) {
+ 
+  transform: translate(9rem, -10rem);
+}
+@keyframes orbit {
+    100% {
+        rotate: 1turn;
+    }
+}
+
+@keyframes hold-position {
+    100% {
+        rotate: -1turn;
+    }
+}
+
+@keyframes throb {
+    100% {
+        scale: 1.05;
+    }
+}
+
