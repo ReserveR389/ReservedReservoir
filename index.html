@@ -8,31 +8,31 @@
 </head>
 <body>
     <nav class="top-nav">
+        <a href="index.html" class="logo">
+            <img src="/Reserved Reservoir-logo/profile.png" alt="Logo Image">
+        </a>
         <ul>
-            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="products.html">Products</a></li>
             <li><a href="contact.html">Contacts</a></li>
         </ul>
     </nav>
+
     <section class="hero">
         <!-- Card 1: Headline, Subheadline, and CTA -->
         <div class="card headline-card">
             <h1 class="headline">Unlock Your Full Potential</h1>
             <h2 class="subheadline">Discover a World of Entertainment and Convenience</h2>
             <p class="description">We have Browser Add-Ons, Art, Books, and More</p>
-            <a href="#" class="cta-button">Take the First Step towards Excellence</a>
+            <a href="products.html" class="cta-button">Take the First Step towards Excellence</a>
         </div>
 
-        <!-- Card 2: Image -->
-        <div class="card picture-card">
-            <img src="your-image.jpg" alt="Image Alt Text">
-        </div>
+        
 
         <!-- Card 3: Problem, Solution, and Example -->
         <div class="card problem-card">
-            <h2 class="subheadline">Navigating the vast digital landscape can be overwhelming. </h2>
-            <p class="problem-description">Finding quality browser add-ons, unique art pieces, and engaging books tailored to your interests and needs can be a time-consuming challenge.</p>
+            <h2 class="subheadline">Navigating the Vast Digital Landscape Can be Overwhelming. </h2>
+            <p class="problem-description">Finding Quality Browser Add-ons, Unique Art pieces, and Engaging Books Tailored To Your Interests and Needs can be a time-consuming challenge.</p>
 
             <h2 class="subheadline">Our site brings you a curated collection of browser add-ons, captivating art, inspiring books, and an array of other delightful products.</h2>
             <p class="solution-description">We simplify your online experience and help you find exactly what you're looking for.</p>
@@ -41,15 +41,29 @@
             <p class="example-description">Explore our handpicked browser extensions, art pieces, and books that cater to your unique tastes and interests. </p>
         </div>
 
-        <!-- Card 4: Video -->
-        <div class="card video-card">
-            <!-- You can embed a video here, e.g., YouTube embed code -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        <!-- Card 3: About Us -->
+        <div class="card about-card">
+            <h2 class="subheadline">Learn More About Me</h2>
+            <p class="description">Explore our story, and the man behind Reserved Reservoir on our About page.</p>
+            <a href="about.html" class="cta-button">About Us</a>
         </div>
+
+        <!-- Card 2: Subscription Form -->
+        <div class="card subscribe-card">
+            <h2 class="subheadline">Subscribe to Our Newsletter</h2>
+            <form id="subscriptionForm" action="/subscribe" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2023 Reserved Reservoir</p>
     </footer>
-    </section>    
+
+    <script src="script.js"></script>
 </body>
 </html>
