@@ -3,32 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Reserved Reservoir</title>
+    <title>Reserved Reservoir - About</title>
+    <style>
+        /* Reset Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Reserved Reservoir-logo/computer-gf7e92db6f_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        nav .logo img {
+            width: 90px;
+            height: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #B54C61;
+        }
+
+        .about-hero {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+            flex-grow: 1; /* Ensures this section grows to fill space between header and footer */
+            text-align: center;
+        }
+
+        .about-hero .card {
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .about-hero .picture-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .about-hero .description-card h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .about-hero .description-card p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .about-hero .description-card .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #B54C61;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .about-hero .description-card .download-button:hover {
+            background-color: #000;
+        }
+
+        .about-hero .description-card .divider {
+            margin: 20px 0;
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto; /* Pushes the footer to the bottom */
+        }
+    </style>
 </head>
 <body>
+    <!-- Navigation -->
     <nav class="top-nav">
-         <!-- Logo -->
-        <a href="index.html" class="logo"> 
+        <!-- Logo -->
+        <a href="index.html" class="logo">
             <img src="Reserved Reservoir-logo/profile-min.png" alt="Reserved Reservoir Logo">
-        </a>  
+        </a>
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="contactMe.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Hero Section -->
     <section class="about-hero">
+        <!-- Profile Picture Card -->
         <div class="card picture-card">
             <img src="Reserved Reservoir-logo/prof.jpg" alt="Profile Picture">
         </div>
+        <!-- Description Card -->
         <div class="card description-card">
             <h2>About Me</h2>
             <p>I'm Carnell Greenfield III, a dedicated and versatile Software Engineer with a passion for creating innovative solutions.</p>
-            <a href="Reserved Reservoir-logo/Greenfield_Carnell_CV.docx.pdf" class="download-button">Download CV</a>
+            <a href="Reserved Reservoir-logo/Greenfield_III_Carnell.pdf" class="download-button">Download CV</a>
             <hr class="divider">
-        </div>     
-    </section>   
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2023 Reserved Reservoir</p>

@@ -3,58 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Reserved Reservoir-logo/favicon_io/favicon.ico" type="image/x-icon"> <!-- Favicon -->
     <title>Reserved Reservoir</title>
+
+    <style>
+        /* General Body Styles */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensures the body takes up the full height of the viewport */
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+                        url('Reserved Reservoir-logo/computer-gf7e92db6f_1280.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styles */
+        .top-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        .top-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        .top-nav li {
+            margin: 0 15px;
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+        .logo img {
+            width: 90px;
+            height: auto;
+        }
+
+        .top-nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .top-nav a:hover {
+            color: #B54C61;
+        }
+
+        /* Main content area */
+        .main-content {
+            padding: 20px;
+            flex-grow: 1; /* Ensures the main content takes up remaining space */
+        }
+
+        /* Section Title */
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        /* Styles for the Products page */
+        .Products .hero {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .Products .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+
+        .Products .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            width: 280px;
+        }
+
+        .Products .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .Products .card h2 {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .Products .card p {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .Products .card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .Products .card-link:hover .card {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Navbar -->
     <nav class="top-nav">
-         <!-- Logo -->
         <a href="index.html" class="logo"> 
             <img src="Reserved Reservoir-logo/profile.png" alt="Reserved Reservoir Logo">
         </a>
         <ul>
             <li><a href="about.html">About</a></li>
             <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html">Contacts</a></li>
+            <li><a href="contactMe.html">Contact</a></li>
         </ul>
     </nav>
-    <section class="Products" id="Products"><div class="hero">
-        <div class="cards">
-            <a href="SEO.html" class="card-link">
-            <div class="card">
-                <img src="/Reserved Reservoir-logo/seo(fixed).jpg" alt="SEO">
-                <h2>Unleash Your Business's Potential</h2>
-                <p>Ready to Rise above the Competition? Take action now to optimize your online presence. Contact us today and let's start the journey towards boosting your visibility and skyrocketing your profits.</p>
+
+    <!-- Main Content Section -->
+    <div class="main-content">
+        <h1>Products</h1>
+
+        <!-- Cards for Products -->
+        <section class="Products" id="Products">
+            <div class="hero">
+                <div class="cards">
+                    <a href="pcbuild.html" class="card-link">
+                        <div class="card">
+                            <img src="/Reserved Reservoir-logo/pcbuild(fixed).png" alt="Custom PC Building">
+                            <h2>Your Dream PC, Built to Perfection</h2>
+                            <p>Discover the power of a custom-built PC tailored to your needs. Contact us Today for any device-based needs!</p>
+                        </div>
+                    </a>
+        
+                    <a href="art.html" class="card-link"> 
+                        <div class="card">
+                            <img src="/Reserved Reservoir-logo/art(fixed).jpg" alt="Art">
+                            <h2>Elevate Your Space with Captivating Art: Browse and Buy Today!</h2>
+                            <p>Transform Your Surroundings - Shop Artworks Now!</p>
+                        </div>
+                    </a>
+                
+                    <a href="software.html" class="card-link"> 
+                        <div class="card">
+                            <img src="/Reserved Reservoir-logo/extension(fixed).jpg" alt="Extensions">    
+                            <h2>Experience Next-Level Convenience: Explore My Web and App Products!</h2>
+                            <p>Unlock New Possibilities!</p>
+                        </div>
+                    </a>
+                </div>  
             </div>
-            </a>
-        <a href="book.html" class="card-link">    
-            <div class="card">
-                <img src="/Reserved Reservoir-logo/books(fixed).jpg" alt="Books">
-                <h2>Dive into a World of Stories: Explore My Books Now!</h2>
-                <p>Get Lost in Words - Purchase Your Copy Located in Products!</p>
-            </div>
-        </a>
-        <a href="art.html" class="card-link"> 
-            <div class="card">
-                <img src="/Reserved Reservoir-logo/art(fixed).jpg" alt="Art">
-                <h2>Elevate Your Space with Captivating Art: Browse and Buy Today!</h2>
-                <p>Transform Your Surroundings - Shop Artworks Now Located in Products!</p>
-            </div>
-        </a>
-        <a href="extensions.html" class="card-link"> 
-            <div class="card">
-                <img src="/Reserved Reservoir-logo/extension(fixed).jpg" alt="Extensions">    
-                <h2>Experience Next-Level Convenience: Explore My Web and App Products!</h2>
-                <p>Unlock New Possibilities - Explore the Products!</p>
-        </div>
-        </a>
-    </div>  
+        </section> 
     </div>
-</section> 
-<!-- Footer -->
-<footer>
-    <p>&copy; 2023 Reserved Reservoir</p>
-</footer>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Reserved Reservoir</p>
+    </footer>
+
 </body>
 </html>
